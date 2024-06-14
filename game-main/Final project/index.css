@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+nav {
+  height: 53px;
+  background: hsl(0, 0%, 0%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+}
+nav .logo a {
+  color: #fff;
+}
+
+.games {
+  color: hsla(0, 100%, 50%, 0.795);
+}
+.game-info {
+  background: url(image/codm.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+.text {
+  position: relative;
+  top: 240px;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  font-size: 35px;
+  font-weight: lighter;
+}
+.heat {
+  color: red;
+}
+h2 {
+  font-size: 25px;
+  margin-top: 15px;
+}
+.btn {
+  margin-top: 19px;
+  color: hsl(0, 0%, 100%);
+  width: 120px;
+  height: 40px;
+  background: red;
+  border: 2px solid red;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.bt {
+  margin-top: 5px;
+  color: red;
+  width: 100px;
+  height: 35px;
+  background: transparent;
+  border-radius: 3px;
+  border: 2px solid red;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.b {
+  margin-top: 5px;
+  color: hsl(0, 0%, 100%);
+  width: 100px;
+  height: 35px;
+  background: red;
+  border: 2px solid red;
+  border-radius: 3px;
+  font-weight: bolder;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.display {
+  position: relative;
+  top: 350px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.image1 {
+  height: 200px;
+  width: 300px;
+  background: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5)),
+    url(image/looklike.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image2 {
+  height: 200px;
+  width: 300px;
+  background: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5)),
+    url(image/dog-with.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image3 {
+  height: 200px;
+  width: 300px;
+  background: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 76%, 12%, 0.5)),
+    url(image/rich.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.display-trail {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+.p {
+  text-align: center;
+  margin-top: 70px;
+  color: #fffefe;
+  font-size: 30px;
+}
+
+.anime {
+  min-height: 100vh;
+  padding-top: 140px;
+}
+
+.anime-info {
+  width: 90%;
+  max-width: 1536px;
+  margin-inline: auto;
+  position: relative;
+  height: 200px;
+  margin-top: 9rem;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+
+.item {
+  width: 300px;
+  height: 200px;
+  border-radius: 6px;
+  position: absolute;
+  left: max(calc(290px * 8), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.item1 {
+  background: url(image/new-set/robocop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+  background: url(image/new-set/blocking.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+  background: url(image/new-set/fighter.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+  background: url(image/new-set/anime.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+  background: url(image/new-set/plane-crash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+  background: url(image/new-set/rescue.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+  background: url(image/new-set/mission.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+  background: url(image/new-set/plane\ adventure.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+.game-img {
+  height: 400px;
+  width: 500px;
+  background: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5)),
+    url(image/dog-with.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.inside-img {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  color: #fff;
+  font-size: 40px;
+  text-transform: uppercase;
+  /* border-bottom: 1px solid hsl(0, 100%, 50%) ; */
+}
+.up {
+  margin-top: 50px;
+}
+.about-game {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.game-info-text {
+  width: 30%;
+}
+
+.action {
+  min-height: 100vh;
+  padding-top: 130px;
+}
+.action-content {
+  height: 300px;
+  width: 100%;
+  background: black;
+}
+.line-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-1 {
+  height: 300px;
+  width: 100%;
+  background: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5)),
+    url(image/new-set/bat-2024.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.action-text{
+    text-align: center;
+  margin-top: 7rem;
+  font-size: 3rem;
+  color: hsl(0, 0%, 100%);
+}
+.action-red{
+    text-align: center;
+  margin-top: 9rem;
+  font-size: 3rem;
+  color: hsl(0, 100%, 50%);
+}
+.black-ground{
+min-height: 55vh;
+/* background: hsl(0, 0%, 0%); */
+}
+.res-text{
+  text-align: center;
+  font-size: 2.4rem;
+position: relative;
+top: 20px;  
+color: hsl(0, 0%, 0%);
+}
+.rescue{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 50px;
+  gap:20px ;
+}
+.rescue-flex{
+  display: flex;
+  align-items: center;
+  /* text-align: center; */
+  margin-top: 100px;
+  justify-content: space-around;
+  /* position: relative; */
+  /* left:100px; */
+  gap: 130px;
+  margin-left: 200px;
+
+}
+.rescue-img{
+  width: 1000px;
+  height: 340px;
+  background: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5)),
+    url(image/new-set/best-gunship.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lok{
+  width: 60%;
+}
+.res-1{
+  width: 300px;
+  height: 200px;
+  background: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5)),
+    url(image/new-set/fighter.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.res-2{
+  width: 300px;
+  height: 200px;
+  background: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5)),
+    url(image/new-set/battlefront.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}.res-3{
+  width: 300px;
+  height: 200px;
+  background: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5)),
+    url(image/new-set/dark-war.jpg);
+    background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}.res-4{
+
+  width: 300px;
+  height: 200px;
+  background: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5)),
+    url(image/new-set/best-gunship.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.height{
+  margin-top: 10px;
+}
+
+.page-more{
+  min-height: 100vh;
+  padding-top: 100px;
+}
+.more{
+  height: 500px;
+  background: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5)),
+  url(image/new-set/best-gunship.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: pink;
+}
